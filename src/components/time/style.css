@@ -1,0 +1,51 @@
+.date_maker {
+    border-radius: 5px;
+    max-width: fit-content;
+    text-align: center;
+    display: flex;
+    flex-direction: row-reverse;
+    color: #444;
+    align-items: center;
+}
+.date_maker > div {
+    padding: 3px;
+
+}
+
+.date_maker__value {
+    border-left: thin solid #444;
+}
+
+.date_maker__header {
+    display: block;
+    text-transform: capitalize;
+    visibility: hidden;
+    width: 20px;
+}
+
+.date_maker__header:first-letter {
+    background-color: inherit;
+    visibility:visible;
+    color: #444;
+}
+
+.date_maker__header:hover {
+    display: block;
+    visibility: visible;
+    text-transform: capitalize;
+    width: fit-content;
+    color: #444;
+}
+
+.duration {
+    display: flex;
+    flex-direction: row;
+    column-gap: 5px;
+    border: thin solid #444;
+    border-radius: 5px;
+    width: fit-content;
+}
+
+.duration > div:first-child > div[id="value"] {
+    border: none;
+}

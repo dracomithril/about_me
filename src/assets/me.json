@@ -1,0 +1,107 @@
+{
+  "name": "Michał",
+  "surname": "Grezel",
+  "quote": "“Everyone can leave a legacy by the way they lead and the impact they have on others.” – Mike Smith",
+  "softSkills": "People management, Team building, Autonomy, Motivation, Mentoring, Couching, Problem Solving, Integrity.",
+  "hardSkills": "Node.js, JavaScript, TypeScript, Rxjs, React, Rxjs, Docker, Jest, Enzyme, WebPack, Git, gitlab ci, Cypress, Storybook, PL/SQL, AWS, kubernetes, microservice.",
+  "experience": [
+    {
+      "companyName": "Grand Parade",
+      "img": "/assets/grandparade.jpg",
+      "positions": [
+        {
+          "title": "Software Engineering Team Lead",
+          "contractType": "Full-time",
+          "dates": {
+            "start": "Jan 2020"
+          },
+          "location": "Krakow, Poland",
+          "details": [
+            "mentoring and developing people skills",
+            "building user oriented features with focus on functionality and performance",
+            "people management in multicultural team",
+            "recruitment of new team members"
+          ]
+        },
+        {
+          "title": "Senior Software Developer",
+          "contractType": "Full-time",
+          "dates": {
+            "start": "Nov 2017",
+            "end": "Jan 2020"
+          },
+          "location": "Krakow, Poland",
+          "details": [
+            "Javascript development concentrated on performance and usability. Maintaining ongoing projects and collaborating with multiple teams on delivering user value features."
+          ]
+        }
+      ]
+    },
+    {
+      "companyName": "Motorola Solutions Polska",
+      "img": "/assets/motorola.png",
+      "positions": [
+        {
+          "title": "Senior Software Developer",
+          "contractType": "Full-time",
+          "dates": {
+            "start": "Sep 2014",
+            "end": "Nov 2017"
+          },
+          "location": "Krakow, Poland",
+          "details": [
+            "2 years of active development as a core member creating back-end nodejs dockerized services.",
+            "1 year of active development in .NET C#."
+          ]
+        }
+      ]
+    },
+    {
+      "companyName": "Comarch",
+      "img": "/assets/comarch.jpg",
+      "positions": [
+        {
+          "title": "Junior Developer",
+          "contractType": "Full-time",
+          "dates": {
+            "start": "Apr 2013",
+            "end": "Aug 2014"
+          },
+          "location": "Krakow, Poland",
+          "details": " Creating and maintaining software in .NET using winForms, ASP.Net, WPF."
+        }
+      ]
+    }
+  ],
+  "education": [
+    {
+      "img": "/assets/leaders_island.png",
+      "institution": "Leaders Island",
+      "field": "COMMUNICATION IS YOUR WORK",
+      "dates": {
+        "start": "2019",
+        "end": "2019"
+      }
+    },
+    {
+      "img": "/assets/pcz.jpg",
+      "institution": "Politechnika Częstochowska",
+      "degree": "Engineer's degree",
+      "field": "Technical Informatics",
+      "dates": {
+        "start": "2009",
+        "end": "2013"
+      }
+    },
+    {
+      "img": "/assets/pcz.jpg",
+      "institution": "Politechnika Częstochowska",
+      "degree": "Master of Engineering (MEng)",
+      "field": "Electrotechnics",
+      "dates": {
+        "start": "2006",
+        "end": "2011"
+      }
+    }
+  ]
+}

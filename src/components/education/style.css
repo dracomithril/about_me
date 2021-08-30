@@ -1,0 +1,19 @@
+.education {
+    display: flex;
+    align-items: center;
+}
+
+.education h3 {
+    margin: 5px;
+}
+
+.logo img {
+    width: 50px;
+    margin: 10px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}

@@ -1,0 +1,33 @@
+.profile {
+  padding: 56px 20px;
+  min-height: 100%;
+  width: 100%;
+  grid-column: 2;
+}
+
+a::before {
+  display: block;
+  content: " ";
+  margin-top: -60px;
+  height: 60px;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.list {
+  list-style: none;
+  padding: 1rem;
+  padding-left: 2rem;
+}
+
+.list:nth-child(odd) {
+  background-color: #f1fafa;
+}
+
+.list:hover {
+  background-color: #e3f0f8;
+}
+
+.section > ul {
+  padding-inline-start: 0rem;
+}

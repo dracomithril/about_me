@@ -1,0 +1,35 @@
+.employment {
+  display: flex;
+  flex-direction: column;
+}
+
+.employment img {
+  height: 50px;
+}
+
+.company_info {
+  display: flex;
+  column-gap: 10px;
+  align-items: center;
+}
+
+.position span {
+  margin: 0 0 0 5px;
+}
+
+.field__name {
+  color: gray;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+}
+
+.time_periode {
+  display: flex;
+  column-gap: 5px;
+  align-items: center;
+  font-size: 0.8rem;
+}
