@@ -103,5 +103,24 @@
         "end": "2011"
       }
     }
+  ],
+  "hobby": [
+    { "title":"dance",
+      "details": [
+        "WCS", "Bachata", "Kizomba"
+      ]
+    },
+    {
+      "title": "playing video games",
+      "details": [
+        "RTS", "Survival strategy", "RPG"
+      ]
+    },
+    {
+      "title": "geeking out",
+      "details": [
+        "MCU","Marvel Comics", "DCU animation", "Arrowvers", "Manga", "Anime"
+      ]
+    }
   ]
 }

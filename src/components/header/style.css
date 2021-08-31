@@ -23,10 +23,17 @@
 .header nav {
 	float: right;
 	font-size: 100%;
+	display: flex;
+}
+
+.header h1 {
+	display: flex;
+	column-gap: 5px;
 }
 
 .header nav a {
-	display: inline-block;
+	display: flex;
+	flex-direction: row;
 	height: 56px;
 	line-height: 56px;
 	padding: 0 15px;
@@ -36,6 +43,12 @@
 	text-decoration: none;
 	color: rgb(0, 0, 0);
 	will-change: background-color;
+	align-items: center;
+	justify-content: center;
+}
+
+.header nav a span {
+	display: none;
 }
 
 .header nav a:hover,
@@ -43,6 +56,28 @@
 	background: rgba(0,0,0,0.2);
 }
 
+.header nav a:hover span,
+.header nav a:active span {
+	display: unset;
+}
+
+
 .header nav a.active {
 	background: rgba(0,0,0,0.4);
+}
+
+@media (max-width: 600px) {
+	.header nav a > span {
+		display: none;
+	}
+
+	.header h1 span {
+		visibility: collapse;
+		width: 15px;
+		text-transform: uppercase;
+	}
+	
+	.header h1 span:first-letter {
+		visibility: visible;
+	}
 }

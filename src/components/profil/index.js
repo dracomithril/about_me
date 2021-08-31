@@ -28,10 +28,28 @@ const Profile = ({ user }) => (
         <Section title="Education" id="education">
           <ul>
             {user.education.map((edu) => (
-              <li key={Math.random()} className={style.list} >
+              <li key={Math.random()} className={style.list}>
                 <Education data={edu} />
               </li>
             ))}
+          </ul>
+        </Section>
+        <Section title="Hobby" id="hobby">
+          <ul>
+            {user.hobby.map((hobby) => {
+              return (
+                <li key={Math.random()} className={style.list}>
+                  <div>
+                    <h3>{hobby.title}</h3>
+                    <ul>
+                      {hobby.details.map((detail) => {
+                        return <li key={Math.random()}>{detail}</li>;
+                      })}
+                    </ul>
+                  </div>
+                </li>
+              );
+            })}
           </ul>
         </Section>
       </section>
