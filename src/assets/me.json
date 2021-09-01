@@ -1,6 +1,7 @@
 {
   "name": "Michał",
   "surname": "Grezel",
+  "avatar": "https://media-exp1.licdn.com/dms/image/C4D03AQEkeYSeGmM7JA/profile-displayphoto-shrink_200_200/0/1563362568821?e=1635984000&v=beta&t=EgApc0puYDCa9S1xRVw_gyRnyUTfPoa-j8Ltbz5DdgQ",
   "quote": "“Everyone can leave a legacy by the way they lead and the impact they have on others.” – Mike Smith",
   "softSkills": "People management, Team building, Autonomy, Motivation, Mentoring, Couching, Problem Solving, Integrity.",
   "hardSkills": "Node.js, JavaScript, TypeScript, Rxjs, React, Rxjs, Docker, Jest, Enzyme, WebPack, Git, gitlab ci, Cypress, Storybook, PL/SQL, AWS, kubernetes, microservice.",
@@ -121,6 +122,30 @@
       "details": [
         "MCU","Marvel Comics", "DCU animation", "Arrowvers", "Manga", "Anime"
       ]
+    }
+  ],
+  "projects": [
+    {
+      "title": "udt testy",
+      "description": "web page providing posibility to test your knowledge regarding Technical Inspection Authority Tests",
+      "link": "https://udtesty.pl/"
+    },
+    {
+      "title": "wedding invite",
+      "description": "online wedding invite. With dates and directions.",
+      "link": "https://wesele.grezel.pl/"
+    }
+  ],
+  "links": [
+    {
+      "title": "linkedin",
+      "url": "https://www.linkedin.com/in/micha%C5%82-grezel-78100589/",
+      "icon": "Linkedin"
+    },
+    {
+      "title": "github",
+      "url": "https://github.com/dracomithril",
+      "icon": "Github"
     }
   ]
 }

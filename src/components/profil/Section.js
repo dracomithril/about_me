@@ -1,5 +1,6 @@
-import { LinkIcon } from "../icons";
+import * as Icon from "preact-feather";
 import style from "./style.css";
+
 
 
 export const Section = ({ id, title, children, className }) => {
@@ -8,7 +9,7 @@ export const Section = ({ id, title, children, className }) => {
       <header>
         <h2>
           <a name={id} id={id} href={`#${id}`}>
-            <LinkIcon />
+            <Icon.Link />
           </a>
           {title}
         </h2>

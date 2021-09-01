@@ -1,4 +1,5 @@
 import { h } from "preact";
+import * as Icon from "preact-feather";
 import style from "./style.css";
 import { Employment } from "../work/Employment";
 import { Education } from "../education/Education";
@@ -6,8 +7,24 @@ import { Section } from "./Section";
 
 const Profile = ({ user }) => (
   <div class={style.profile}>
-    <h1>{`${user.name} ${user.surname}`}</h1>
-    <p>{user.quote}</p>
+    <div className={style.user_info}>
+      <h1>{`${user.name} ${user.surname}`}</h1>
+      <div className={style.links}>
+        {user.links.map((link) => {
+          const LinkIcon = Icon[link.icon] || null;
+          return (
+            <a key={Math.random()} href={link.url} title={link.title} rel="noreferrer" target="_blank">
+              <LinkIcon />
+            </a>
+          );
+        })}
+      </div>
+      <p className={style.quote}>{user.quote}</p>
+      <div className={style.avatar}>
+        <img src={user.avatar} />
+      </div>
+    </div>
+
     <div>
       <section>
         <Section title="Soft skills" id="soft">
@@ -46,6 +63,23 @@ const Profile = ({ user }) => (
                         return <li key={Math.random()}>{detail}</li>;
                       })}
                     </ul>
+                  </div>
+                </li>
+              );
+            })}
+          </ul>
+        </Section>
+        <Section title="Projects" id="projects">
+          <ul>
+            {user.projects.map((project) => {
+              return (
+                <li key={Math.random()} className={style.list}>
+                  <div>
+                    <h3>{project.title}</h3>
+                    <a href={project.link}>{project.link}</a>
+                    <p>
+                      <span>{project.description}</span>
+                    </p>
                   </div>
                 </li>
               );

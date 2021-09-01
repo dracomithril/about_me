@@ -5,6 +5,35 @@
   grid-column: 2;
 }
 
+.user_info {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: repeat(1fr);
+  grid-template-areas: 
+    "header avatar"
+    "links  avatar"
+    "quote  avatar";
+}
+
+.links {
+  grid-area: links;
+  display: flex;
+  column-gap: 5px;
+}
+
+.quote {
+  grid-area: quote;
+}
+
+.avatar {
+  grid-area: avatar;
+}
+.avatar img {
+  border-radius: 50%;
+  max-width: 150px;
+  margin: 1rem;
+}
+
 a::before {
   display: block;
   content: " ";
@@ -30,4 +59,8 @@ a::before {
 
 .section > ul {
   padding-inline-start: 0rem;
+}
+
+.section > header > h2 {
+  display: flex;
 }

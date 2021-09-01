@@ -22,6 +22,10 @@ const Header = () => (
         <Icon.Headphones />
         <span>Hobby</span>
       </a>
+      <a activeClassName={style.active} href="#projects">
+        <Icon.Tool />
+        <span>Projects</span>
+      </a>
     </nav>
   </header>
 );
