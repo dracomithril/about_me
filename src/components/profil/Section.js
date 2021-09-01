@@ -1,8 +1,6 @@
 import * as Icon from "preact-feather";
 import style from "./style.css";
 
-
-
 export const Section = ({ id, title, children, className }) => {
   return (
     <section className={`${style.section} ${className}`}>
