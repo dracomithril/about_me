@@ -22,7 +22,7 @@ const Profile = ({ user }) => {
             );
           })}
         </div>
-        <div>
+        <div className={style.about_me}>
           <span>{about_me[0]}</span>
           <strong>{formatDistanceToNow(new Date(user.start))}</strong>
           <span>{about_me[1]}</span>
