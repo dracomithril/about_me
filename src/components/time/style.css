@@ -16,7 +16,7 @@
     border-left: thin solid #444;
 } */
 
-.date_maker__header {
+.date_maker__header:not(first-letter) {
     display: block;
     text-transform: capitalize;
     visibility: hidden;
@@ -60,4 +60,24 @@
 
 .duration > div:first-child > div[id="value"] {
     border: none;
+}
+
+@media print {
+    .duration {
+        border: unset;
+        background-color: transparent;
+    }
+
+    .date_maker {
+        background-color: transparent;
+    }
+
+    .date_maker__header:not(first-letter) {
+        visibility: visible;
+        width: fit-content;
+    }
+
+    .duration > div:last-child {
+        display: none;
+    }
 }

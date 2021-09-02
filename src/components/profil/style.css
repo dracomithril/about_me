@@ -84,3 +84,32 @@ a::before {
 .section > header > h2 {
   display: flex;
 }
+
+.link span {
+  display: none;
+}
+
+@media print {
+  .section > header > h2 > a {
+    display: none;
+  }
+  
+  .link {
+    display: flex;
+    align-items: center;
+  }
+  .link span {
+    display: unset;
+    margin-left: 1rem;
+  }
+  
+  .links {
+    flex-direction: column;
+    row-gap: 15px;
+  }
+
+  .user_info > h1 {
+    text-align: center;
+  }
+}
+

@@ -9,6 +9,7 @@ export const Duration = ({ start, end, title }) => {
     end,
   });
   const { years, months, days } = duration;
+
   return (
     <div title={title} className={style.duration}>
       <DateMarker title="years" value={years} />

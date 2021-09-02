@@ -10,6 +10,12 @@
 	z-index: 50;
 }
 
+@media print {
+	.header {
+		display: none;
+	}
+}
+
 .header h1 {
 	float: left;
 	margin: 0;

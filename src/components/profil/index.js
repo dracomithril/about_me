@@ -16,8 +16,9 @@ const Profile = ({ user }) => {
           {user.links.map((link) => {
             const LinkIcon = Icon[link.icon] || null;
             return (
-              <a key={Math.random()} href={link.url} title={link.title} rel="noreferrer" target="_blank">
+              <a key={Math.random()} href={link.url} title={link.title} rel="noreferrer" target="_blank" className={style.link}>
                 <LinkIcon />
+                <span>{link.url}</span>
               </a>
             );
           })}
