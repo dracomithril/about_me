@@ -10,20 +10,20 @@
   grid-template-columns: 3fr 1fr;
   grid-template-rows: auto;
   row-gap: 10px;
-  grid-template-areas: 
-  "header avatar"
-  "links  avatar"
-  "about_me about_me"
-  "quote  quote";
+  grid-template-areas:
+    "header avatar"
+    "links  avatar"
+    "about_me about_me"
+    "quote  quote";
 }
 
 @media screen and (min-width: 600px) {
   .user_info {
-    grid-template-areas: 
-    "header avatar"
-    "links  avatar"
-    "about_me avatar"
-    "quote  avatar";
+    grid-template-areas:
+      "header avatar"
+      "links  avatar"
+      "about_me avatar"
+      "quote  avatar";
   }
 }
 
@@ -89,20 +89,32 @@ a::before {
   display: none;
 }
 
+.hobbies {
+  display: flex;
+  column-gap: 4rem;
+  text-align: center;
+}
+
 @media print {
   .section > header > h2 > a {
     display: none;
   }
-  
+
+  .list {
+    padding-left: 0.3rem;
+  }
+
   .link {
     display: flex;
     align-items: center;
+    text-decoration: none;
+    color: #000;
   }
   .link span {
     display: unset;
     margin-left: 1rem;
   }
-  
+
   .links {
     flex-direction: column;
     row-gap: 15px;
@@ -111,5 +123,9 @@ a::before {
   .user_info > h1 {
     text-align: center;
   }
-}
 
+  .pagebreak {
+    clear: both;
+    page-break-after: always;
+  }
+}

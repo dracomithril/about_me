@@ -16,7 +16,14 @@ const Profile = ({ user }) => {
           {user.links.map((link) => {
             const LinkIcon = Icon[link.icon] || null;
             return (
-              <a key={Math.random()} href={link.url} title={link.title} rel="noreferrer" target="_blank" className={style.link}>
+              <a
+                key={Math.random()}
+                href={link.url}
+                title={link.title}
+                rel="noreferrer"
+                target="_blank"
+                className={style.link}
+              >
                 <LinkIcon />
                 <span>{link.url}</span>
               </a>
@@ -33,69 +40,65 @@ const Profile = ({ user }) => {
           <img src={user.avatar} />
         </div>
       </div>
-
-      <div>
-        <section>
-          <Section title="Soft skills" id="soft">
-            <span>{user.softSkills}</span>
-          </Section>
-          <Section title="Hard skills and technologies" id="hard">
-            <span>{user.hardSkills}</span>
-          </Section>
-          <Section title="Experience" id="experience" start={user.start}>
-            <ul className={style.connected_list}>
-              {user.experience.map((exp) => (
+      <div className={style.user_details}>
+        <Section title="Soft skills" id="soft">
+          <span>{user.softSkills}</span>
+        </Section>
+        <Section title="Hard skills and technologies" id="hard">
+          <span>{user.hardSkills}</span>
+        </Section>
+        <Section title="Experience" id="experience" start={user.start}>
+          <ul className={style.connected_list}>
+            {user.experience.map((exp) => (
+              <li key={Math.random()} className={style.list}>
+                <Employment data={exp} />
+              </li>
+            ))}
+          </ul>
+        </Section>
+        <Section title="Education" id="education">
+          <ul>
+            {user.education.map((edu) => (
+              <li key={Math.random()} className={style.list}>
+                <Education data={edu} />
+              </li>
+            ))}
+          </ul>
+        </Section>
+        <div className={style.pagebreak} />
+        <Section title="Hobby" id="hobby">
+          <div className={style.hobbies}>
+            {user.hobby.map((hobby) => {
+              return (
+                <div key={Math.random()} className={style.list}>
+                  <h3>{hobby.title}</h3>
+                  <ul>
+                    {hobby.details.map((detail) => {
+                      return <li key={Math.random()}>{detail}</li>;
+                    })}
+                  </ul>
+                </div>
+              );
+            })}
+          </div>
+        </Section>
+        <Section title="Projects" id="projects">
+          <ul>
+            {user.projects.map((project) => {
+              return (
                 <li key={Math.random()} className={style.list}>
-                  <Employment data={exp} />
+                  <div>
+                    <h3>{project.title}</h3>
+                    <a href={project.link}>{project.link}</a>
+                    <p>
+                      <span>{project.description}</span>
+                    </p>
+                  </div>
                 </li>
-              ))}
-            </ul>
-          </Section>
-          <Section title="Education" id="education">
-            <ul>
-              {user.education.map((edu) => (
-                <li key={Math.random()} className={style.list}>
-                  <Education data={edu} />
-                </li>
-              ))}
-            </ul>
-          </Section>
-          <Section title="Hobby" id="hobby">
-            <ul>
-              {user.hobby.map((hobby) => {
-                return (
-                  <li key={Math.random()} className={style.list}>
-                    <div>
-                      <h3>{hobby.title}</h3>
-                      <ul>
-                        {hobby.details.map((detail) => {
-                          return <li key={Math.random()}>{detail}</li>;
-                        })}
-                      </ul>
-                    </div>
-                  </li>
-                );
-              })}
-            </ul>
-          </Section>
-          <Section title="Projects" id="projects">
-            <ul>
-              {user.projects.map((project) => {
-                return (
-                  <li key={Math.random()} className={style.list}>
-                    <div>
-                      <h3>{project.title}</h3>
-                      <a href={project.link}>{project.link}</a>
-                      <p>
-                        <span>{project.description}</span>
-                      </p>
-                    </div>
-                  </li>
-                );
-              })}
-            </ul>
-          </Section>
-        </section>
+              );
+            })}
+          </ul>
+        </Section>
       </div>
     </div>
   );

@@ -33,3 +33,9 @@
   align-items: center;
   font-size: 0.8rem;
 }
+
+@media print {
+  .employment ul {
+    padding-left: 1rem;
+  }
+}
