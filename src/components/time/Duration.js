@@ -14,7 +14,7 @@ export const Duration = ({ start, end, title }) => {
     <div title={title} className={style.duration}>
       <DateMarker title="years" value={years} />
       <DateMarker title="months" value={months} />
-      <DateMarker title="days" value={days} />
+      <DateMarker title="days" value={days} style={{ display: "none" }} />
     </div>
   );
 };

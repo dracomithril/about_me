@@ -24,12 +24,12 @@
 .header {
   display: flex;
   align-items: center;
-  column-gap: 5px;
+  column-gap: 1em;
 }
 
 .time_periode {
   display: flex;
-  column-gap: 5px;
+  column-gap: 1em;
   align-items: center;
   font-size: 0.8rem;
 }

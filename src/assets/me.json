@@ -16,7 +16,7 @@
           "title": "Software Engineering Team Lead",
           "contractType": "Full-time",
           "dates": {
-            "start": "Jan 2020"
+            "start": "1 Jan 2020"
           },
           "location": "Krakow, Poland",
           "details": [
@@ -30,8 +30,8 @@
           "title": "Senior Software Developer",
           "contractType": "Full-time",
           "dates": {
-            "start": "Nov 2017",
-            "end": "Jan 2020"
+            "start": "1 Nov 2017",
+            "end": "1 Jan 2020"
           },
           "location": "Krakow, Poland",
           "details": [
@@ -48,8 +48,8 @@
           "title": "Senior Software Developer",
           "contractType": "Full-time",
           "dates": {
-            "start": "Sep 2014",
-            "end": "Nov 2017"
+            "start": "1 Sep 2014",
+            "end": "1 Nov 2017"
           },
           "location": "Krakow, Poland",
           "details": [
@@ -67,8 +67,8 @@
           "title": "Junior Developer",
           "contractType": "Full-time",
           "dates": {
-            "start": "Apr 2013",
-            "end": "Aug 2014"
+            "start": "1 Apr 2013",
+            "end": "1 Aug 2014"
           },
           "location": "Krakow, Poland",
           "details": " Creating and maintaining software in .NET using winForms, ASP.Net, WPF."
