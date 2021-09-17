@@ -3,7 +3,7 @@
     text-align: center;
     display: flex;
     flex-direction: row-reverse;
-    color: #444;
+    color: var(--text-color);
     align-items: center;
 }
 .date_maker > div {
@@ -18,7 +18,7 @@
 
 .date_maker__header {
     width: fit-content;
-    color: #444;
+    color: var(--text-color);
 }
 
 .duration {
@@ -28,5 +28,5 @@
     width: fit-content;
     justify-content: center;
     align-items: center;
-    border-bottom: solid #444 thin;
+    border-bottom: solid var(--text-color) thin;
 }

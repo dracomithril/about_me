@@ -1,5 +1,5 @@
 import { Duration } from "../time/Duration";
-import { TimePeriode } from "../time/TimePeriode";
+import { TimePeriod } from "../time/TimePeriod";
 import style from "./style.css";
 
 export const Position = ({ data }) => {
@@ -15,8 +15,8 @@ export const Position = ({ data }) => {
         <h4 hidden title="contract type">
           {contractType}
         </h4>
-        <div class={style.time_periode}>
-          <TimePeriode start={startDate} end={dates.end ? endDate : null} title="Dates Employed" />
+        <div class={style.time_period}>
+          <TimePeriod start={startDate} end={dates.end ? endDate : null} title="Dates Employed" />
           <Duration start={startDate} end={endDate} title="Employment Duration" />
         </div>
         <h4 hidden>
