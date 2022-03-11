@@ -77,22 +77,9 @@ a::before {
   background-color: var(--bkg-hover);
 }
 
-.section > ul {
-  padding-inline-start: 0rem;
-}
-
-.section > header > h2 {
-  display: flex;
-}
 
 .link span {
   display: none;
-}
-
-.hobbies {
-  display: flex;
-  column-gap: 4rem;
-  text-align: center;
 }
 
 @media print {

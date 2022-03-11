@@ -1,0 +1,7 @@
+.section > ul {
+  padding-inline-start: 0rem;
+}
+
+.section > header > h2 {
+  display: flex;
+}

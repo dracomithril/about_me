@@ -1,0 +1,33 @@
+.hobbies {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  column-gap: 1rem;
+  text-align: center;
+}
+
+.hobby {
+  display: grid;
+  background-color: var(--bkg-shade);
+  grid-template-columns: 1fr;
+  margin: 10px;
+  grid-template-rows: [header] 1fr [details] 3fr;
+  grid-template-areas: 
+    "header header header"
+    "details details details";
+}
+
+.hobby:hover {
+  background-color: var(--bkg-hover);
+}
+
+.hobby h3 {
+  grid-row: header;
+}
+
+.hobby ul {
+  grid-row: details;
+  display: flex;
+  flex-direction: column;
+  padding-left: 2em;
+}

@@ -1,5 +1,5 @@
 import * as Icon from "preact-feather";
-import style from "./style.css";
+import style from "./components.module.css";
 
 export const Section = ({ id, title, children, className }) => {
   return (

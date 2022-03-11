@@ -1,6 +1,6 @@
 import style from "./style.css";
 
-export const Education = ({ data }) => {
+export const School = ({ data }) => {
   const { dates, degree, field, img, institution } = data;
   return (
     <div className={style.education}>

@@ -2,10 +2,36 @@
   "name": "Michał",
   "surname": "Grezel",
   "avatar": "/assets/avatar.png",
-  "quote": "“Everyone can leave a legacy by the way they lead and the impact they have on others.” – Mike Smith",
-  "softSkills": "People management, Team building, Autonomy, Motivation, Mentoring, Couching, Problem Solving, Integrity.",
-  "hardSkills": "Node.js, JavaScript, TypeScript, Rxjs, React, Rxjs, Docker, Jest, Enzyme, WebPack, Git, gitlab ci, Cypress, Storybook, PL/SQL, AWS, kubernetes, microservice.",
-  "about_me": "I'm developer for $time enjoying programing and working with people. I believe that there is always higher hill to climb up to either regarding knowledge, skills or being better person.", 
+  "quote": "“Everyone can leave a legacy by the way they lead and the impact they have on others.” - Mike Smith",
+  "softSkills": [
+    "People management",
+    "Team building",
+    "Autonomy",
+    "Motivation",
+    "Mentoring",
+    "Couching",
+    "Problem solving",
+    "Integrity"
+  ],
+  "hardSkills": [
+    "Node.js",
+    "JavaScript",
+    "TypeScript",
+    "Rxjs",
+    "React",
+    "Docker",
+    "Jest",
+    "Enzyme",
+    "WebPack",
+    "Git",
+    "gitlab ci",
+    "Cypress",
+    "Storybook",
+    "AWS",
+    "k8s",
+    "microservice."
+  ],
+  "about_me": "I'm developer for $time enjoying programing and working with people. I believe that there is always higher hill to climb up to either regarding knowledge, skills or being better person.",
   "start": "1 Apr 2013",
   "experience": [
     {
@@ -107,22 +133,32 @@
       }
     }
   ],
-  "hobby": [
-    { "title":"dance",
+  "hobbies": [
+    {
+      "title": "dance",
       "details": [
-        "WCS", "Bachata", "Kizomba"
+        "WCS",
+        "Bachata",
+        "Kizomba"
       ]
     },
     {
       "title": "playing video games",
       "details": [
-        "RTS", "Survival strategy", "RPG"
+        "RTS",
+        "Survival strategy",
+        "RPG"
       ]
     },
     {
       "title": "geeking out",
       "details": [
-        "MCU","Marvel Comics", "DCU animation", "Arrowvers", "Manga", "Anime"
+        "MCU",
+        "Marvel Comics",
+        "DCU animation",
+        "Arrowvers",
+        "Manga",
+        "Anime"
       ]
     }
   ],
