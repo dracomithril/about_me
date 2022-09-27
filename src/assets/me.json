@@ -9,7 +9,7 @@
     "Autonomy",
     "Motivation",
     "Mentoring",
-    "Couching",
+    "Coaching",
     "Problem solving",
     "Integrity"
   ],
@@ -137,17 +137,19 @@
     {
       "title": "dance",
       "details": [
-        "WCS",
+        "West Coast Swing",
         "Bachata",
-        "Kizomba"
+        "Kizomba",
+        "Dancing in general"
       ]
     },
     {
       "title": "playing video games",
       "details": [
-        "RTS",
+        "FPS",
         "Survival strategy",
-        "RPG"
+        "RPG",
+        "Builders"
       ]
     },
     {
@@ -158,6 +160,7 @@
         "DCU animation",
         "Arrowvers",
         "Manga",
+        "Manhwa Novels",
         "Anime"
       ]
     }
