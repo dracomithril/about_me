@@ -1,4 +1,4 @@
-import style from "./style.css";
+import style from "./style.module.css";
 import { Duration } from "../time/Duration";
 import { Position } from "./Position";
 

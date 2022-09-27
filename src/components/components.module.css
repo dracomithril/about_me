@@ -5,3 +5,9 @@
 .section > header > h2 {
   display: flex;
 }
+
+@media print {
+    .section > header a {
+        display: none;
+    }
+}

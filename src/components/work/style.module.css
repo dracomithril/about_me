@@ -17,6 +17,10 @@
   margin: 0 0 0 5px;
 }
 
+.connected_list {
+    padding-left: 0em;
+}
+
 .field__name {
   color: gray;
 }

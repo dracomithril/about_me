@@ -34,11 +34,17 @@ body {
 #app {
   height: 100%;
   display: grid;
-  grid-template-columns: minmax(1.2rem, 1fr) minmax(auto, 75ch) minmax(1.2rem, 1fr);
+  grid-template-columns: minmax(.2rem, 1fr) minmax(auto, 75ch) minmax(.2rem, 1fr);
 }
 
 svg {
   color: #444;
+}
+
+@media print {
+    body {
+        background-color: unset;
+    }
 }
 
 @media (prefers-color-scheme: dark) {

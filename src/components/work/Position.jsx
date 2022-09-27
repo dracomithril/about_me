@@ -1,6 +1,6 @@
 import { Duration } from "../time/Duration";
 import { TimePeriod } from "../time/TimePeriod";
-import style from "./style.css";
+import style from "./style.module.css";
 
 export const Position = ({ data }) => {
   const { dates, location, details, title, contractType } = data;

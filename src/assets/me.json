@@ -163,6 +163,13 @@
         "Manhwa Novels",
         "Anime"
       ]
+    }, {
+        "title": "tinkering",
+        "details": [
+            "smart home",
+            "ESP32 programing",
+            "IoT"
+        ]
     }
   ],
   "projects": [
