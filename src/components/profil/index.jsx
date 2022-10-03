@@ -126,12 +126,10 @@ function UserDetails(props) {
     <div className={style.user_details}>
       <Skills title="Soft skills" id="soft" skills={props.user.softSkills} />
       <Skills title="Hard skills and technologies" id="hard" skills={props.user.hardSkills} />
-      <div className={style.pagebreak} />
       <Experience user={props.user} />
       <Education education={props.user.education} />
       <div className={style.pagebreak} />
       <Hobbies hobbies={props.user.hobbies} />
-      <div className={style.pagebreak} />
       <Section title="Projects" id="projects">
         <ul>{props.user.projects.map(mapProjects)}</ul>
       </Section>
