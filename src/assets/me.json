@@ -31,9 +31,39 @@
     "k8s",
     "microservice."
   ],
-  "about_me": "I'm developer for $time enjoying programing and working with people. I believe that there is always higher hill to climb up to either regarding knowledge, skills or being better person.",
+  "about_me": "I'm manager for $lead and developer for last $time. I enjoy working with people, grooming their potential, providing them good space to work collaborate. I also enjoy programming and tackling problems that comes during development. I believe that there is always higher hill to climb up to either regarding knowledge, skills or being better person.",
   "start": "1 Apr 2013",
+  "lead": "1 Jan 2020",
   "experience": [
+    {
+      "companyName": "JTI",
+      "img": "/assets/jti.png",
+      "positions": [
+        {
+          "title": "Squad Lead (Tech Lead/Engineering Manager)",
+          "contractType": [
+            "Full-time",
+            "Contract",
+            "Remote"
+          ],
+          "dates": {
+            "start": "6 Feb 2023"
+          },
+          "location": "Poland",
+          "details": [
+            "mentoring and developing people skills",
+            "building user oriented features with focus on functionality and performance",
+            "people management in multicultural team",
+            "recruitment of new team members",
+            "collaboration with other teams on delivering user value features",
+            "working with product owners on defining and refining user stories",
+            "introducing changes to improve development experience and quality of the code",
+            "participating in architecture decisions",
+            "improving stability and performance of the application"
+          ]
+        }
+      ]
+    },
     {
       "companyName": "Grand Parade",
       "img": "/assets/grandparade.jpg",
@@ -42,7 +72,8 @@
           "title": "Software Engineering Team Lead",
           "contractType": "Full-time",
           "dates": {
-            "start": "1 Jan 2020"
+            "start": "1 Jan 2020",
+            "end": "1 Feb 2023"
           },
           "location": "Krakow, Poland",
           "details": [
@@ -158,24 +189,24 @@
         "MCU",
         "Marvel Comics",
         "DCU animation",
-        "Arrowvers",
         "Manga",
         "Manhwa Novels",
         "Anime"
       ]
-    }, {
-        "title": "tinkering",
-        "details": [
-            "smart home",
-            "ESP32 programing",
-            "IoT"
-        ]
+    },
+    {
+      "title": "tinkering",
+      "details": [
+        "smart home",
+        "ESP32 programming",
+        "IoT"
+      ]
     }
   ],
   "projects": [
     {
       "title": "udt testy",
-      "description": "web page providing posibility to test your knowledge regarding Technical Inspection Authority Tests",
+      "description": "web page providing possibility to test your knowledge regarding Technical Inspection Authority Tests",
       "link": "https://udtesty.pl/"
     },
     {

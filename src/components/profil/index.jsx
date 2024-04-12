@@ -108,9 +108,15 @@ const UserInfo = (props) => {
       <h1>{`${props.user.name} ${props.user.surname}`}</h1>
       <Links links={props.user.links} />
       <div className={style.about_me}>
-        <span>{props.about_me[0]}</span>
-        <strong>{formatDistanceToNow(new Date(props.user.start))}</strong>
-        <span>{props.about_me[1]}</span>
+        I'm manager for{" "}
+        <strong>{formatDistanceToNow(new Date(props.user.lead))}</strong> and
+        developer for{" "}
+        <strong>{formatDistanceToNow(new Date(props.user.start))}</strong>. I
+        enjoy working with people, grooming their potential, providing them good
+        space to work collaborate. I also enjoy programming and tackling
+        problems that comes during development. I believe that there is always
+        higher hill to climb up to either regarding knowledge, skills or being
+        better person.
       </div>
       <p className={style.quote}>{props.user.quote}</p>
       <div className={style.avatar}>
@@ -120,12 +126,15 @@ const UserInfo = (props) => {
   );
 };
 
-
 function UserDetails(props) {
   return (
     <div className={style.user_details}>
       <Skills title="Soft skills" id="soft" skills={props.user.softSkills} />
-      <Skills title="Hard skills and technologies" id="hard" skills={props.user.hardSkills} />
+      <Skills
+        title="Hard skills and technologies"
+        id="hard"
+        skills={props.user.hardSkills}
+      />
       <Experience user={props.user} />
       <Education education={props.user.education} />
       <div className={style.pagebreak} />
