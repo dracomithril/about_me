@@ -137,7 +137,6 @@ function UserDetails(props) {
       />
       <Experience user={props.user} />
       <Education education={props.user.education} />
-      <div className={style.pagebreak} />
       <Hobbies hobbies={props.user.hobbies} />
       <Section title="Projects" id="projects">
         <ul>{props.user.projects.map(mapProjects)}</ul>
