@@ -108,15 +108,15 @@ const UserInfo = (props) => {
       <h1>{`${props.user.name} ${props.user.surname}`}</h1>
       <Links links={props.user.links} />
       <div className={style.about_me}>
-        I'm manager for{" "}
+        I have been a manager for{" "}
         <strong>{formatDistanceToNow(new Date(props.user.lead))}</strong> and
         developer for{" "}
         <strong>{formatDistanceToNow(new Date(props.user.start))}</strong>. I
-        enjoy working with people, grooming their potential, providing them good
-        space to work collaborate. I also enjoy programming and tackling
-        problems that comes during development. I believe that there is always
-        higher hill to climb up to either regarding knowledge, skills or being
-        better person.
+        enjoy working with people, grooming their potential, providing them with
+        good space to work and collaborate. Not only that, but I also enjoy
+        programming. Resolving issues during development is a rewarding
+        experience. I believe that there is always a higher hill to climb up to.
+        Either regarding knowledge, skills or being a better person.
       </div>
       <p className={style.quote}>{props.user.quote}</p>
       <div className={style.avatar}>
