@@ -120,7 +120,8 @@ const UserInfo = (props) => {
       </div>
       <p className={style.quote}>{props.user.quote}</p>
       <div className={style.avatar}>
-        <img src={props.user.avatar} />
+        <img class={style.profile_avatar} src={props.user.avatar} />
+        <img class={style.company_avatar} src="/assets/softt1nk3r_no_bg.png" />
       </div>
     </div>
   );

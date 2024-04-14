@@ -13,6 +13,10 @@
   align-items: center;
 }
 
+.position {
+  list-style: none;
+}
+
 .position span {
   margin: 0 0 0 5px;
 }
