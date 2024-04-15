@@ -5,26 +5,48 @@
   grid-column: 2;
 }
 
+
 .user_info {
   display: grid;
   grid-template-columns: 1fr 3fr;
   grid-template-rows: 80px auto;
   row-gap: 10px;
   grid-template-areas:
-    "avatar header"
-    "avatar links"
-    "about_me about_me"
-    "quote  quote";
+  "avatar avatar"
+  "avatar avatar"
+  "header header"
+  "links links"
+  "about_me about_me"
+  "quote  quote";
 }
 
 @media screen and (min-width: 600px) {
   .user_info {
     grid-template-areas:
-      "avatar header"
-      "avatar links"
-      "avatar about_me"
-      "avatar quote";
+    "avatar header"
+    "avatar links"
+    "avatar about_me"
+    "avatar quote";
   }
+
+  .avatar {
+    grid-area: avatar;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.title {
+  grid-area: header;
+}
+
+.title > h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+.title > h3 {
+  padding-top: 1em;
+  margin: 0;
 }
 
 .links {
@@ -47,6 +69,7 @@
 
 .avatar {
   grid-area: avatar;
+  display: flex;
 }
 
 .profile_avatar {
@@ -94,6 +117,21 @@ a::before {
 @media print {
   .section > header > h2 > a {
     display: none;
+  }
+
+  .user_info {
+    grid-template-areas:
+    "avatar header"
+    "avatar links"
+    "avatar about_me"
+    "avatar quote";
+  }
+
+  .avatar {
+    grid-area: avatar;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .list {

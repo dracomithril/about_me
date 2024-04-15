@@ -105,7 +105,10 @@ const Education = (props) => {
 const UserInfo = (props) => {
   return (
     <div className={style.user_info}>
-      <h1>{`${props.user.name} ${props.user.surname}`}</h1>
+      <div className={style.title}>
+        <h1>{`${props.user.name} ${props.user.surname}`}</h1>
+        <h3>{props.user.title}</h3>
+      </div>
       <Links links={props.user.links} />
       <div className={style.about_me}>
         I have been a manager for{" "}
